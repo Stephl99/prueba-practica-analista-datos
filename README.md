@@ -4,15 +4,15 @@ El proyecto se divide en tres partes que contienen el desarrollo de los ejercici
 
 1. **Segmentación de comercios mediante RFM:** análisis de los comercios y las transacciones realizadas por la API, con el fin de caracterizar segmentos de comercios según su comportamiento de recencia, frecuencia y valor monetario. El proceso genera el archivo data_segmentacion.csv con los resultados, y se complementa con un dashboard en Power BI para el monitoreo de la estrategia de segmentación, para conseguir el aumento esperado de las comisiones por el uso de la API. Los archivos con el desarrollo de esta parte son:
 
-    - `notebooks/01_segmentacion_clientes.ipynb`
-    - `dashboard/dashboard.pbix`
+    - [`01_segmentacion_clientes.ipynb`](notebooks/01_segmentacion_clientes.ipynb)
+    - [`dashboard/dashboard.pbix`](dashboard/dashboard.pbix)
 
 2. **Análisis de series de tiempo:** para la Tasa Representativa del Mercado (TCRM), incluyendo un análisis descriptivo y exploratio, identificación de los componentes de la serie, y evaluación y validación de pronósticos.Los archivos con el desarrollo de esta parte son:
  
-    - `notebooks/02_series_tiempo_tcrm.ipynb`
+    - [`notebooks/02_series_tiempo_tcrm.ipynb`](notebooks/02_series_tiempo_tcrm.ipynb)
 
-3. **Preguntas y problemas de marketing:** Solución a preugntas relacionadas con marketing y estrategias de campañas, analizando los resultados y brindando recomendaciones.
-    - `notebooks/03_marketing_estrategias.ipynb`
+3. **Preguntas y problemas de marketing:** Solución a preguntas relacionadas con marketing y estrategias de campañas, analizando los resultados y brindando recomendaciones.
+    - [`notebooks/03_marketing_estrategias.ipynb`](notebooks/03_marketing_estrategias.ipynb)
 
 ## Estructura del proyecto
 
@@ -105,25 +105,29 @@ Luego abrir los notebooks desde la interfaz web.
 
 ## Guía de revisión
 
-### Parte 1 — Segmentación de clientes (`01_segmentacion_clientes.ipynb`, `dashboard.pbix`)
+### Parte 1 — Segmentación de clientes ([`01_segmentacion_clientes.ipynb`](notebooks/01_segmentacion_clientes.ipynb), [`dashboard.pbix`](dashboard\dashboard.pbix))
 
-- Lectura y limpieza de `data/raw/DataTransacciones_PruebasIngreso.xlsx` (comercios y transacciones).
+C:\Users\Stephany.Lobo\OneDrive - insidemedia.net\Escritorio\Prueba\dashboard\dashboard.pbix
+
+C:\Users\Stephany.Lobo\OneDrive - insidemedia.net\Escritorio\Prueba\data\raw\DataTransacciones_PruebasIngreso.xlsx
+
+- Lectura y limpieza de [`data/raw/DataTransacciones_PruebasIngreso.xlsx`](\data\raw\DataTransacciones_PruebasIngreso.xlsx) (comercios y transacciones).
 - Elección y construcción de variables **RFM** (Recencia, Frecuencia, Monto) para la segmentación de los comercios.
-- Asignación de segmentos, análsis de resultados y exportación de archivo fcon la segmentación `data/processed/data_segmentacion.csv`.
-- Propuesta de seguimiento a la metodología en `01_segmentacion_clientes.ipynb` y desarrollo del dashboard según el diseño propuesto `dashboard/dashboard.pbix`.
+- Asignación de segmentos, análsis de resultados y exportación de archivo con la segmentación [`data/processed/data_segmentacion.csv`](data/processed/data_segmentacion.csv).
+- Propuesta de seguimiento a la metodología en [`01_segmentacion_clientes.ipynb`](notebooks/01_segmentacion_clientes.ipynb) y desarrollo del dashboard según el diseño propuesto [`dashboard/dashboard.pbix`](dashboard/dashboard.pbix).
 
   > Si se desean actualizar los datos, verificar fuentes en Power Query del `.pbix`.
 
-- `data_segmentacion.csv` contiene una fila por cliente con sus métricas RFM y su segmento, y se usa para el desarrollo del dashboard.
+- [`data_segmentacion.csv`](data/processed/data_segmentacion.csv) contiene una fila por cliente con sus métricas RFM y su segmento, y se usa para el desarrollo del dashboard.
 
-### Parte 2 — Series de tiempo TCRM (`02_series_tiempo_tcrm.ipynb`)
+### Parte 2 — Series de tiempo TCRM ([`notebooks/02_series_tiempo_tcrm.ipynb`](notebooks/02_series_tiempo_tcrm.ipynb))
 
-- Carga y exploración del histórico `data/raw/Tasa_de_Cambio_Representativa_del__Mercado_Historico.xlsx`.
+- Carga y exploración del histórico [`data/raw/Tasa_de_Cambio_Representativa_del__Mercado_Historico.xlsx`](data/raw/Tasa_de_Cambio_Representativa_del__Mercado_Historico.xlsx).
 - Análisis exploratorio, descomposición de la serie y verificación de estacionariedad (prueba **ADF**), autocorrelaciones (**ACF/PACF**).
 - Identificaciónd e modelos óptimos a partir del EDA y función **auto-arima** (`pmdarima`) y evaluación con métricas como **MAPE** (`sklearn.metrics`).
 - Validación del pronóstico y recomendaciones.
 
-### Parte 3 — Marketing y estrategias de campaña (`03_marketing_estrategias.ipynb`)
+### Parte 3 — Marketing y estrategias de campaña ([`notebooks/03_marketing_estrategias.ipynb`](notebooks/03_marketing_estrategias.ipynb))
 
 - Desarrollo de las preguntas y problemas planteados sobre marketing y estrategias de campaña.
 
