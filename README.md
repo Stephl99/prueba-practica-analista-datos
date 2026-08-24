@@ -46,63 +46,6 @@ Prueba/
 
 > Los notebooks fueron desarrollados y probados con Python 3.14 sobre Windows.
 
-## Instalación
-
-1. Clonar o descargar el proyecto y ubicarse en la carpeta raíz.
-
-2. Crear el entorno virtual:
-
-   ```powershell
-   python -m venv .venv
-   ```
-
-3. Activar el entorno virtual:
-
-   - **PowerShell:**
-
-     ```powershell
-     .\.venv\Scripts\Activate.ps1
-     ```
-
-   - **CMD:**
-
-     ```cmd
-     .venv\Scripts\activate.bat
-     ```
-
-   - **Git Bash:**
-
-     ```bash
-     source .venv/Scripts/activate
-     ```
-
-4. Instalar las dependencias:
-
-   ```powershell
-   pip install -r requirements.txt
-   ```
-
-## Ejecución (opcional)
-
-Los notebooks pueden revisarse directamente (incluyen salidas ya ejecutadas), pero si se desea re-ejecutarlos:
-
-### Opción A — VS Code (recomendada)
-
-1. Abrir la carpeta del proyecto en VS Code.
-2. Instalar las extensiones **Python** y **Jupyter**.
-3. Seleccionar como kernel el intérprete del entorno virtual: `.venv\Scripts\python.exe`.
-   > El paquete `ipykernel` es necesario; instalarlo con `pip install ipykernel` si no está disponible.
-4. Abrir cada notebook dentro de `notebooks/` y ejecutar todas las celdas (`Run All`), respetando el orden indicado abajo.
-
-### Opción B — Jupyter desde el navegador
-
-```powershell
-pip install jupyterlab
-jupyter lab notebooks
-```
-
-Luego abrir los notebooks desde la interfaz web.
-
 ## Guía de revisión
 
 ### Parte 1 — Segmentación de clientes ([`01_segmentacion_clientes.ipynb`](notebooks/01_segmentacion_clientes.ipynb), [`dashboard.pbix`](dashboard\dashboard.pbix))
@@ -126,6 +69,49 @@ Luego abrir los notebooks desde la interfaz web.
 ### Parte 3 — Marketing y estrategias de campaña ([`notebooks/03_marketing_estrategias.ipynb`](notebooks/03_marketing_estrategias.ipynb))
 
 - Desarrollo de las preguntas y problemas planteados sobre marketing y estrategias de campaña.
+  
+## Ejecución (opcional)
+
+1. Clonar o descargar el proyecto y ubicarse en la carpeta raíz.
+
+2. Crear el entorno virtual:
+
+   ```powershell
+   python -m venv .venv
+   ```
+
+3. Activar el entorno virtual:
+
+   - **CMD:**
+
+     ```cmd
+     .venv\Scripts\activate.bat
+     ```
+     
+4. Instalar las dependencias:
+
+   ```powershell
+   pip install -r requirements.txt
+   ```
+
+Si se desea reejecutar los notebooks:
+
+### Opción A — VS Code (recomendada)
+
+1. Abrir la carpeta del proyecto en VS Code.
+2. Instalar las extensiones **Python** y **Jupyter**.
+3. Seleccionar como kernel el intérprete del entorno virtual: `.venv\Scripts\python.exe`.
+   > El paquete `ipykernel` es necesario; instalarlo con `pip install ipykernel`.
+4. Abrir cada notebook dentro de `notebooks/` y ejecutar todas las celdas (`Run All`), respetando el orden.
+
+### Opción B — Jupyter desde el navegador
+
+```powershell
+pip install jupyterlab
+jupyter lab notebooks
+```
+
+Luego abrir los notebooks desde la interfaz web.
 
 ### Material de apoyo
 
