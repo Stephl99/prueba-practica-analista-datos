@@ -1,0 +1,9 @@
+# Prueba práctica - Analista de datos
+# Python 3.14
+matplotlib==3.11.1
+numpy==2.5.2
+openpyxl==3.1.5
+pandas==3.0.5
+pmdarima==2.1.1
+scikit-learn==1.9.0
+statsmodels==0.14.6
