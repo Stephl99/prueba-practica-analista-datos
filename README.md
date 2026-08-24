@@ -107,10 +107,6 @@ Luego abrir los notebooks desde la interfaz web.
 
 ### Parte 1 — Segmentación de clientes ([`01_segmentacion_clientes.ipynb`](notebooks/01_segmentacion_clientes.ipynb), [`dashboard.pbix`](dashboard\dashboard.pbix))
 
-C:\Users\Stephany.Lobo\OneDrive - insidemedia.net\Escritorio\Prueba\dashboard\dashboard.pbix
-
-C:\Users\Stephany.Lobo\OneDrive - insidemedia.net\Escritorio\Prueba\data\raw\DataTransacciones_PruebasIngreso.xlsx
-
 - Lectura y limpieza de [`data/raw/DataTransacciones_PruebasIngreso.xlsx`](\data\raw\DataTransacciones_PruebasIngreso.xlsx) (comercios y transacciones).
 - Elección y construcción de variables **RFM** (Recencia, Frecuencia, Monto) para la segmentación de los comercios.
 - Asignación de segmentos, análsis de resultados y exportación de archivo con la segmentación [`data/processed/data_segmentacion.csv`](data/processed/data_segmentacion.csv).
